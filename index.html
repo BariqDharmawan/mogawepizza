@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+                padding: 0;
+                list-style-type: none;
+                text-decoration: none;
+            }
+            :root {
+                --primary: #4d87d1;
+                --grey-300: #c8c8c8;
+            }
+
+            body {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            a {
+                color: var(--primary);
+            }
+
+            #app {
+                background-image: url("./auth/bg-cahaya.png");
+                background-size: auto 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-grow: 1;
+            }
+
+            .card {
+                padding: 1.5rem;
+                border-radius: 10px;
+                border: 1px solid var(--primary);
+                background-color: white;
+            }
+
+            .card__header {
+                padding-bottom: 1rem;
+            }
+
+            .card__body {
+                padding: 1.5rem 0;
+            }
+
+            .btn {
+                padding: 10px;
+                border-radius: 10px;
+                display: inline-flex;
+            }
+
+            .btn--block {
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            .btn--primary {
+                color: white;
+                background-color: var(--primary);
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+            .my-4 {
+                margin-top: 1.2rem;
+                margin-bottom: 1.2rem;
+            }
+
+            .mb-4 {
+                margin-bottom: 1.2rem;
+            }
+
+            .border-b-grey {
+                border-bottom: 1px solid var(--grey-300);
+            }
+            .border-t-grey {
+                border-top: 1px solid var(--grey-300);
+            }
+
+            .card__footer {
+                padding-top: 1.2rem;
+                color: rgb(128, 128, 128);
+            }
+
+            footer {
+                margin-top: auto;
+                width: 100%;
+                color: rgb(171, 171, 171);
+                background-color: #f2f2f2;
+                display: flex;
+                padding: 1rem 0;
+                font-weight: bold;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <div class="card">
+                <div class="card__header border-b-grey">
+                    <img src="auth/mogawe-text.png" alt="" srcset="" />
+                </div>
+                <div class="card__body text-center">
+                    <p class="mb-4">
+                        <strong>Invitation from Yayang Rahmadina</strong>
+                    </p>
+                    <img
+                        src="auth/pizzahut.png"
+                        alt=""
+                        class="mb-4"
+                        srcset=""
+                    />
+                    <p class="mb-4">
+                        You are invited as Admin at <b>Pizza Hut Indonesia</b>.
+                        Verify yourself by clicking below button
+                    </p>
+
+                    <a href="" class="btn btn--block btn--primary">
+                        I'm Joining
+                    </a>
+                </div>
+                <div class="card__footer border-t-grey">
+                    <small>
+                        If you have any questions, you can ask our Customer
+                        Service at <a href="">08118808833</a> or email us
+                        <a href="mailto:support@mogawe.id">support@mogawe.id</a>
+                    </small>
+                </div>
+            </div>
+        </div>
+        <footer>
+            &copy; 2022 bisnis.mogawe.com | Job Distributor Platform V.1.0.1
+        </footer>
+    </body>
+</html>
